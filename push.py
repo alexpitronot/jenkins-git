@@ -13,4 +13,4 @@ if not os.path.exists("data.txt"):
     file1.write(Hello_Message.format(fName, lName, age, id_n))
     file1.close()
 else:
-    exit(1)
+    print("File exist")
