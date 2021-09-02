@@ -14,7 +14,7 @@ pipeline {
         
         stage('Print') {
             steps {
-                sh "Echo 'All Good'"
+                echo 'All Good'
             }
         }
     }
