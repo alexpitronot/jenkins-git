@@ -3,24 +3,24 @@ pipeline {
     stages {
         stage('Example clean') {
             steps {
-                sh "rm -rf my-app"
-                sh "git clone https://github.com/pknowledge/my-app.git"
-                sh "mvn clean -f my-app"
+                sh "rm -rf jenkins-git"
+                sh "git clone https://github.com/alexpitronot/jenkins-git.git"
+                sh "mvn clean -f jenkins-git"
             }
         }
         stage('Example install') {
             steps {
-                sh "mvn install -f my-app"
+                sh "mvn install -f jenkins-git"
             }
         }
         stage('Example test') {
             steps {
-                sh "mvn test -f my-app"
+                sh "mvn test -f jenkins-git"
             }
         }
         stage('Example package') {
             steps {
-                sh "mvn package -f my-app"
+                sh "mvn package -f jenkins-git"
             }
         }
     }
