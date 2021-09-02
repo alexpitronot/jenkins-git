@@ -9,17 +9,7 @@ pipeline {
         }
         stage('Example install') {
             steps {
-                sh "mvn install -f jenkins-git"
-            }
-        }
-        stage('Example test') {
-            steps {
-                sh "mvn test -f jenkins-git"
-            }
-        }
-        stage('Example package') {
-            steps {
-                sh "mvn package -f jenkins-git"
+                echo 'All Good'
             }
         }
     }
