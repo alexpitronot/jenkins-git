@@ -4,8 +4,7 @@ pipeline {
         stage('Example clean') {
             steps {
                 sh "rm -rf jenkins-git"
-                sh "git clone https://github.com/alexpitronot/jenkins-git.git"
-                sh "mvn clean -f jenkins-git"
+                sh "git clone https://github.com/alexpitronot/jenkins-git.git"                
             }
         }
         stage('Example install') {
