@@ -8,13 +8,13 @@ pipeline {
         }
         stage('mail') {
             steps {
-                mail bcc: '', body: 'Saomething was changed', cc: 'alexpitronot@gmail.com', from: '', replyTo: '', subject: 'Attension!!!!!!!!!!!', to: 'agorbach@gmail.com'
+                mail bcc: '', body: 'Your repository was changed', cc: 'alexpitronot@gmail.com', from: '', replyTo: '', subject: 'Attention!!', to: 'agorbach@gmail.com'
             }
         }
         
         stage('Print') {
             steps {
-                echo 'All Good again 2022!'
+                echo 'Now all good'
             }
         }
     }
