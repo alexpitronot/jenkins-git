@@ -14,7 +14,7 @@ pipeline {
         
         stage('Print') {
             steps {
-                echo 'Now all good'
+                echo 'Now all good 30-09'
             }
         }
     }
