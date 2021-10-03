@@ -4,7 +4,7 @@ if not os.path.exists("data.txt"):
 
     fName = "Alex"
     lName = "Gorbachov"
-    age = 44
+    age = 45
     id_n = "31882222"
 
     Hello_Message = 'Hello {} {}, {} years old, with ID number: {}.'
