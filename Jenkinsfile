@@ -17,6 +17,12 @@ pipeline {
                 echo 'Now all good 09-01-23'
             }
         }
+
+        stage('Exit') {
+            steps {
+                echo 'Now Exit'
+            }
+        }
     }
 }
 
